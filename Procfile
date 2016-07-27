@@ -1,1 +1,1 @@
-web: gunicorn main.py:app --log-file -
+web: gunicorn -b 0.0.0.0:$PORT main.py:app
